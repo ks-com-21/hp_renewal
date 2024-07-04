@@ -1,5 +1,6 @@
+import { useState } from 'react';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Noto_Sans_Javanese } from 'next/font/google';
 import './globals.css';
 
 import Navigation from '@/components/Navigation';
@@ -21,7 +22,9 @@ export default function RootLayout({
     <html lang='ja'>
       <body className={inter.className}>
         <Navigation />
-        <main className='flex min-h-screen flex-col'>{children}</main>
+        <main className='flex md:mx-8 mx-4 min-h-screen'>
+          <div className='mx-auto md:max-w-4xl w-full'>{children}</div>
+        </main>
         <Footer />
       </body>
     </html>

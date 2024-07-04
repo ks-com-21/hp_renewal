@@ -19,15 +19,15 @@ const Footer = () => {
   ));
 
   return (
-    <footer className='py-10 w-full z-10 bg-slate-600 text-sm'>
+    <footer className='py-10 w-full z-10 bg-black text-sm text-white'>
       <div className='flex w-full justify-between'>
         <nav className='w-full mx-auto'>
-          <ul className='flex md:w-1/2 md:mx-auto items-stretch justify-between h-full'>
+          <ul className='flex md:w-1/2 w-2/3 mx-auto items-stretch justify-between h-full'>
             {linkComponentList}
           </ul>
         </nav>
       </div>
-      <p className='text-center'>Copyright 2024 Comfy</p>
+      <p className='text-center'>© 株式会社コムファイ All rights reserved.</p>
     </footer>
   );
 };
